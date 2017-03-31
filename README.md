@@ -15,4 +15,5 @@
 - addLast(T)
 - removeLast()
 - peekLast()
-*rationale: These methods expand on what Queue does and allows for adding and removing from both the front and the end of the list.
+<br>
+rationale: These methods expand on what Queue does and allows for adding and removing from both the front and the end of the list.

@@ -10,7 +10,7 @@
 
 # Method implementations for Deque for type T:
 <br>
-**T IS A GENERIC TYPE**
+** T IS A GENERIC TYPE ** 
 <br>
 - addFirst(T); **returns void and adds the element to the start of the list.**
 - removeFirst(); **returns a type T element and removes the element from the start of the list.**

@@ -15,5 +15,7 @@
 - addLast(T); **returns void and adds the element to the end of the list.**
 - removeLast(); **returns a type T element and removes the element from the end of the list.**
 - peekLast(); **returns a type T element from the end of the list.**
+- removeFirstOccurrence(Object o); **returns true if the first occurrence of *o* is removed, false otherwise**
+- removeLastOccurrence(Object o); **returns true if the last occurrence of *o* is removed, false otherwise**
 <br>
-RATIONALE FOR CHOOSING THESE METHODS: These methods expand on what Queue does and allows for adding and removing from both the front and the end of the list.
+RATIONALE FOR CHOOSING THESE METHODS: These methods expand on what Queue does and allows for adding and removing from both the front and the end of the list. It also lets us have better flexibility with our code.

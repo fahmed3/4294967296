@@ -1,4 +1,4 @@
-# 4294967296
+# Team 4294967296 - Fabiha Ahmed, Levi Olevsky, Shivasuryan Vummidi
 
 # Why did we choose an ArrayList?
 - Easier to implement than linked lists

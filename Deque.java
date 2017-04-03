@@ -23,6 +23,12 @@ public interface Deque<Card>{
     POSTCONDITION: Return the last element of the Deque
     */
     public Card peekLast();
-
-
+    /*PRECONDITION: You have a valid Deque
+    POSTCONDITION: Return true if the first occurrence is removed, false otherwise
+    */
+    public boolean removeFirstOccurrence(Object o);
+    /*PRECONDITION: You have a valid Deque
+    POSTCONDITION: Return true if the last occurrence is removed, false otherwise
+    */
+    public boolean removeLastOccurrence(Object o);
 }

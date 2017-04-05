@@ -6,36 +6,60 @@
 import java.util.ArrayList;
 
 public class QQKachoo<T> implements Deque<T>{
-
+    
+    //The underlying data structure for our Deque is an ArrayList.
     private ArrayList<T> container;
-
+    
+    //Constructor
     public QQKachoo(){
 	container = new ArrayList<T>();
     }
 
+    /*PRECONDITION: You have a valid element and a valid Deque
+    POSTCONDITION: Add the element to the start of the Deque.
+    */
     public void addFirst(T x){
 	container.add(0,x);
     }
 
+    /*PRECONDITION: You have a valid element and a valid Deque
+    POSTCONDITION: Add the element to the end of the Deque.
+    */
     public void addLast(T x){
 	container.add(x);
     }
 
+    /*PRECONDITION: You have a valid Deque
+    POSTCONDITION: Removes the first element from the Deque and returns it
+    */
     public T removeFirst(){
 	return container.remove(0);
     }
 
+    /*PRECONDITION: You have a valid Deque
+    POSTCONDITION: Removes the last element from the Deque and returns it
+    */
     public T removeLast(){
 	return container.remove(container.size() -1);
     }
 
+    /*PRECONDITION: You have a valid Deque and is not empty
+    POSTCONDITION: Return the last element of the Deque
+    */
     public T peekFirst(){
 	return container.get(0);
     }
 
+    /*PRECONDITION: You have a valid Deque and is not empty
+    POSTCONDITION: Return the last element of the Deque
+    */
     public T peekLast(){
 	return container.get(container.size()-1);
     }
+
+    /*PRECONDITION: You have a valid Deque
+    POSTCONDITION: Return true if the first  occurrence is removed, false otherwise
+    */
 
     public boolean removeFirstOccurrence(Object o)
     {
@@ -48,6 +72,9 @@ public class QQKachoo<T> implements Deque<T>{
 	return false;
     }
 
+    /*PRECONDITION: You have a valid Deque
+    POSTCONDITION: Return true if the last occurrence is removed, false otherwise
+    */
     public boolean removeLastOccurrence(Object o){
     	for(int i = container.size()-1; i > -1; i--){
 	    if(container.get(i).equals(o)){

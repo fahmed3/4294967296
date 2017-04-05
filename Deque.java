@@ -11,17 +11,17 @@ public interface Deque<Card>{
     public void addLast(Card x);
     
     /*PRECONDITION: You have a valid Deque
-    POSTCONDITION: Removes the first element from the Deque
+    POSTCONDITION: Removes the first element from the Deque and returns it
     */
     public Card removeFirst();
     
     /*PRECONDITION: You have a valid Deque
-    POSTCONDITION: Removes the last element from the Deque
+    POSTCONDITION: Removes the last element from the Deque and returns it
     */
     public Card removeLast();
     
     /*PRECONDITION: You have a valid Deque and is not empty
-    POSTCONDITION: Return the first element of the Deque
+    POSTCONDITION: Return the first element of the Deque 
     */
     public Card peekFirst();
     
